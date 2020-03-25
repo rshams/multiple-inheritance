@@ -1,0 +1,44 @@
+Multiple Inheritance in C++
+===========================
+
+A diamond class inheritance diagram:
+
+       ----------
+       | base_t |
+       ----------
+          ^  ^
+         /    \
+        /      \
+       /        \      
+ ----------   ----------
+ | der1_t |   | der2_t |
+ ----------   ----------
+       ^        ^
+        \      /
+         \    /
+          \  /
+       ----------
+       | der3_t |
+       ----------
+
+
+TERMINAL OUTPUT:
+================
+
+base class constructor called
+base            x: 0
+
+base class constructor called
+der1 class constructor called
+derived 1       x: 1
+
+base class constructor called
+der2 class constructor called
+derived 2       x: 2
+
+base class constructor called
+der1 class constructor called
+der2 class constructor called
+der3 class constructor called
+derived 3       x: 2
+
